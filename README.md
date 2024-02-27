@@ -1,5 +1,5 @@
 <h1>
-  💻<br>Teslabank
+  💻 Teslabank
 </h1>
 
 <h4 align="center"><a href="https://tesla-bank-gamma.vercel.app/">Clique para visitar o projeto</a></h4>

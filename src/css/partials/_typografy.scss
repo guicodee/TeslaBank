@@ -1,0 +1,118 @@
+
+@mixin typeface-1( $size, $device: desktop ) { // Função que tem os parametros que sao obrigatorios, e o parametro device, vem com o padrao desktop.
+    
+    
+    @if $size == h1 and $device == desktop { // Aumenta a fonte, sempre diminui o line-height.
+        font-size: 5rem; // 80px
+        line-height: 110%;
+    } @else if $size == h1 and $device == mobile {
+        font-size: 2.5rem; // 40px
+        line-height: 120%;
+    }
+    
+    @else if $size == h2 and $device == desktop { 
+        font-size: 3.2rem; // 52px
+        line-height: 110%;
+    } @else if $size == h2 and $device == mobile {
+        font-size: 1.625; // 26px
+        line-height: 120%;
+    }
+    
+    @else if $size == h3 and $device == desktop { 
+        font-size: 1.5rem; // 24px
+        line-height: 120%;
+    } @else if $size == h3 and $device == mobile {
+        font-size: 1.5rem; // 24px
+        line-height: 120%;
+    }
+    
+    @else if $size == h4 and $device == desktop { 
+        font-size: 1.5rem; // 24px
+        line-height: 120%;
+    } @else if $size == h4 and $device == mobile {
+        font-size: 1.125rem; // 18px
+        line-height: 130%;
+    }
+    
+    @else if $size == h5 and $device == desktop { 
+        font-size: 1.25rem; // 20px
+        line-height: 140%;
+    } @else if $size == h5 and $device == mobile {
+        font-size: 1rem; // 16px
+        line-height: 150%;
+    }
+}
+
+@mixin typeface-2( $size: p2, $device: desktop ) { // Os parametros serve para quando a gente nao passar ele, automaticamente ele com o padrao p2.
+    @if $size == p1 and $device == desktop { 
+        font-size: 1.5rem; // 24px
+        line-height: 170%;
+    } @else if $size == p1 and $device == mobile {
+        font-size: 1.125rem; // 18px
+        line-height: 130%;
+    }
+
+    @if $size == p2 and $device == desktop { 
+        font-size: 1rem; // 16px
+        line-height: 140%;
+    } @else if $size == p2 and $device == mobile {
+        font-size: 0.875rem; // 14px
+        line-height: 150%;
+    }
+
+    @if $size == p3 and $device == desktop { 
+        font-size: 0.875rem; // 14px
+        line-height: 150%;
+    } @else if $size == p3 and $device == mobile {
+        font-size: 0.875rem; // 14px
+        line-height: 150%;
+    }
+}
+
+h1 {
+    @include typeface-1(h1, desktop); // Passei os parametros la em cima;
+
+    @include responsive(s) { // 540px
+        @include typeface-1(h1, mobile); // Quando chegar na resolução de 540px, ele vai mudar o size e o line-height da fonte.
+    }
+}
+
+h2 {
+    @include typeface-1(h2, desktop); 
+
+    @include responsive(s) { 
+        @include typeface-1(h2, mobile); 
+    }
+}
+
+h3 {
+    @include typeface-1(h3, desktop); 
+
+    @include responsive(s) { 
+        @include typeface-1(h3, mobile); 
+    }
+}
+
+h4 {
+    @include typeface-1(h4, desktop); 
+
+    @include responsive(s) { 
+        @include typeface-1(h4, mobile); 
+    }
+}
+
+h5 {
+    @include typeface-1(h5, desktop); 
+
+    @include responsive(s) { 
+        @include typeface-1(h5, mobile); 
+    }
+}
+
+p {
+    @include typeface-2(p2, desktop); 
+
+    @include responsive(s) { 
+        @include typeface-2(p2, mobile); 
+    }
+}

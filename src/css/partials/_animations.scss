@@ -1,0 +1,20 @@
+.group-540 {
+    animation: icon-move 3s ease 0s infinite alternate
+}
+
+.group-541 {
+    animation: icon-move 3s ease 1.5s infinite alternate
+}
+
+.group-539 {
+    animation: icon-move 3s ease 3s infinite alternate
+}
+
+@keyframes icon-move {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(10px, -40px, 0);
+    }
+}

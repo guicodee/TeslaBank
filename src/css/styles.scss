@@ -1,0 +1,24 @@
+@import './partials/colors';
+@import './partials/layout';
+@import './partials/typografy';
+@import './partials/spacing';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    scroll-behavior: smooth;
+}
+@import './partials/menu';
+@import './partials/animations';
+@import './partials/swiper';

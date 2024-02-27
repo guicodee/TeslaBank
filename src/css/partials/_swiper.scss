@@ -1,0 +1,96 @@
+.container-swiper {
+    max-width: $container-xl;
+    margin: 0 auto;
+    padding: 96px 24px1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #FFF8F9;
+
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.swiper-slide {
+    max-width: 300px;
+    margin: 0 32px;
+    padding: 24px 36px;
+    border-radius: 4px;
+    background-color: $white-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    h4 {
+        font-family: $dm-sans-font;
+        font-weight: 500;
+        line-height: 32px;
+        color: $dark-10;
+    }
+
+    p {
+        font-family: $inter-font;
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 24px;
+        color: $dark-10;
+    }
+    
+    a {
+        font-family: $inter-font;
+        color: $red-color;
+        font-weight: 600;
+        line-height: 17px;
+        font-size: 0.875rem;
+    }
+}
+
+.button-next {
+    position: absolute;
+    right: -30px;
+    top: -74px;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    color: $red-color;
+}
+
+.button-prev {
+    position: absolute;
+    right: 25px;
+    top: -86px;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
+    background-image: url('../svg/credit-card.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.icon-2 {
+    background-image: url('../svg/shopping-cart.svg');
+}
+.icon-3 {
+    background-image: url('../svg/clock.svg');
+}
+.icon-4 {
+    background-image: url('../svg/shield.svg');
+}
+.icon-5 {
+    background-image: url('../svg/percent.svg');
+}
+.icon-6 {
+    background-image: url('../svg/gift.svg');
+}
